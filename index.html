@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <title>The preCICE community</title>
+
+        <link rel="stylesheet" href="dist/reset.css">
+        <link rel="stylesheet" href="dist/reveal.css">
+        <link rel="stylesheet" href="dist/theme/precice.css" id="theme">
+
+        <!-- Theme used for syntax highlighted code -->
+        <link rel="stylesheet" href="plugin/highlight/atom-one-light.css" id="highlight-theme">
+
+        <style>
+        .container{
+            display: flex;
+        }
+        .col{
+            flex: 1;
+        }
+        </style>
+
+        <!-- FontAwesome -->
+        <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+        <style> .reveal i.fa { font-family:FontAwesome; font-style: normal; } </style>
+    </head>
+    <body>
+        <div class="reveal">
+            <div class="slides">
+        
+                <!-- Title slide -->
+                <section>
+                    <small>preCICE Workshop 2021 - February 22-25 - Online</small>
+                    <h1>The preCICE community</h1>
+                    <div>or "how to contribute and be a good user"</div>
+                    <div style="margin-top:50pt">
+                        <div>
+                            <small>Gerasimos Chourdakis, Technical University of Munich<br/><a href="mailto:chourdak@in.tum.de">chourdak@in.tum.de</a></small><br/>
+                            <!-- <img data-src="images/logos/tum.png" style="border:none; box-shadow:none; height:30px;"> -->
+                        </div>
+                    </div>
+                </section>
+                
+                <section data-markdown="sections/new-user.md" data-separator-vertical="vvv"></section>
+
+                <section data-markdown="sections/discourse.md" data-separator-vertical="vvv"></section>
+
+                <section>
+                <section>
+                    <h2>Community stories</h2>
+                    (Testimonials)
+                </section>
+
+                <section data-background-iframe="https://www.precice.org/community-projects.html" data-background-interactive>
+                </section>
+                </section>
+
+                <section data-markdown="sections/issues.md" data-separator-vertical="vvv"></section>
+
+                <section>
+                <section>
+                    <h2>Contributing code</h2>
+                </section>
+
+                <section data-markdown="sections/pr.md" data-separator-vertical="vvv"></section>
+
+                <section data-background-iframe="https://www.precice.org/community-contribute-to-precice.html" data-background-interactive>
+                </section>
+                </section>
+
+                <section data-markdown="sections/academic.md" data-separator-vertical="vvv"></section>
+
+                <!-- Closing -->
+                <section data-markdown="sections/closing.md" data-separator-vertical="vvv"></section>
+            </div>
+        </div>
+
+        <script src="dist/reveal.js"></script>
+        <script src="plugin/notes/notes.js"></script>
+        <script src="plugin/markdown/markdown.js"></script>
+        <script src="plugin/highlight/highlight.js"></script>
+        <script>
+            // More info about initialization & config:
+            // - https://revealjs.com/initialization/
+            // - https://revealjs.com/config/
+            Reveal.initialize({
+                width: 960,
+                height: 700,
+                center: true,
+                controls: true,
+                controlsTutorial: false,
+                progress: true,
+                slideNumber: false,
+                center: true,
+                hash: true,
+                transition: 'none', // none/fade/slide/convex/concave/zoom
+                backgroundTransition: 'none', // none/fade/slide/convex/concave/zoom
+                defaultTiming: 50,
+                // Learn about plugins: https://revealjs.com/plugins/
+                plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+            });
+        </script>
+    </body>
+</html>
